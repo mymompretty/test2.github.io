@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <title>추천 문제집</title>
+  <style>
+    body {
+      font-family: sans-serif;
+      background-color: #fdf6e3;
+      text-align: center;
+      padding: 50px;
+    }
+
+    button {
+      padding: 12px 24px;
+      font-size: 16px;
+      background-color: #f5deb3;
+      border: none;
+      border-radius: 8px;
+      cursor: pointer;
+    }
+
+    button:hover {
+      background-color: #f3d999;
+    }
+
+    ul {
+      margin-top: 30px;
+      list-style-type: none;
+      padding: 0;
+    }
+
+    li {
+      margin: 10px 0;
+    }
+
+    a {
+      color: #2a2a2a;
+      text-decoration: none;
+      font-weight: bold;
+    }
+
+    a:hover {
+      text-decoration: underline;
+    }
+  </style>
+</head>
+<body>
+
+  <h1>📚 추천 문제집 리스트</h1>
+  <button onclick="showBooks()">추천 문제집 보기</button>
+
+  <ul id="bookList" style="display: none;">
+    <li><a href="https://www.dcinside.com/" target="_blank">문제집 1 - 수학 실전편</a></li>
+    <li><a href="https://www.dcinside.com/" target="_blank">문제집 2 - 영어 독해 마스터</a></li>
+    <li><a href="https://www.dcinside.com/" target="_blank">문제집 3 - 국어 비문학 완성</a></li>
+    <li><a href="https://www.dcinside.com/" target="_blank">문제집 4 - 과학 개념 총정리</a></li>
+    <li><a href="https://www.dcinside.com/" target="_blank">문제집 5 - 한국사 실력 향상</a></li>
+  </ul>
+
+  <script>
+    function showBooks() {
+      document.getElementById('bookList').style.display = 'block';
+    }
+  </script>
+
+</body>
+</html>
